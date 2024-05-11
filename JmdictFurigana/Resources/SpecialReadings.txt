@@ -50,6 +50,7 @@
 
 可愛|かわい
 眼差し|まなざし|0:まな;1:ざ
+可哀|かわい
 
 
 ; All the readings below are extracted from http://www16.atpages.jp/kanjikentei/jukujikun.html
