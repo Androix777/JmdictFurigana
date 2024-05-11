@@ -47,10 +47,13 @@
 浪漫|ロマン
 浪漫|ろうまん
 
-; All the readings below are extracted from http://www16.atpages.jp/kanjikentei/jukujikun.html
-; Thank you to the people involved in making this page. :)
 
 可愛|かわい
+眼差し|まなざし|0:まな;1:ざ
+
+
+; All the readings below are extracted from http://www16.atpages.jp/kanjikentei/jukujikun.html
+; Thank you to the people involved in making this page. :)
 
 嗚呼|ああ
 吁嗟|ああ
