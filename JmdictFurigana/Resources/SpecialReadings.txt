@@ -13,7 +13,16 @@
 ; is assumed that the kana reading covers the whole kanji string.
 ; You can define multiple entries to allow multiple readings for a same kanji reading.
 
+
+可愛|かわい
+眼差し|まなざし|0:まな;1:ざ
+可哀|かわい
 合点|がてん|0:が;1:てん
+１０|じゅう
+１０|じっ
+１０|とお
+１０|じゅっ
+
 
 兄|にい
 姉|ねえ
@@ -46,11 +55,6 @@
 経緯|いきさつ
 浪漫|ロマン
 浪漫|ろうまん
-
-
-可愛|かわい
-眼差し|まなざし|0:まな;1:ざ
-可哀|かわい
 
 
 ; All the readings below are extracted from http://www16.atpages.jp/kanjikentei/jukujikun.html
