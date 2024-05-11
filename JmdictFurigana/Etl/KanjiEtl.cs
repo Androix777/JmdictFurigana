@@ -106,6 +106,7 @@ namespace JmdictFurigana.Etl
                 kanji.ReadingsWithNanori = kanji.Readings.Union(nanoriReadings).Distinct().ToList();
 
                 // Return the kanji read and go to the next kanji node.
+                AddAllReadings(kanji);
                 yield return kanji;
 
                 xkanji.RemoveAll();
@@ -114,8 +115,31 @@ namespace JmdictFurigana.Etl
             // Return the remaining supplementary kanji as new kanji.
             foreach (Kanji k in supplementaryKanji)
             {
+                AddAllReadings(k);
                 yield return k;
             }
+        }
+
+        private void AddAllReadings(Kanji kanji)
+        {
+            HashSet<string> readings = new HashSet<string>();
+            HashSet<string> readingsWithNanori = new HashSet<string>();
+
+            foreach (string reading in kanji.Readings)
+            {
+                readings.Add(KanaHelper.ToHiragana(reading));
+                readings.Add(KanaHelper.ToKatakana(reading));
+            }
+
+            kanji.Readings = new List<string>(readings);
+
+            foreach (string reading in kanji.ReadingsWithNanori)
+            {
+                readingsWithNanori.Add(KanaHelper.ToHiragana(reading));
+                readingsWithNanori.Add(KanaHelper.ToKatakana(reading));
+            }
+
+            kanji.ReadingsWithNanori = new List<string>(readingsWithNanori);
         }
 
         #endregion
