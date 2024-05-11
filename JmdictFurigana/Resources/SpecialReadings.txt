@@ -50,7 +50,7 @@
 ; All the readings below are extracted from http://www16.atpages.jp/kanjikentei/jukujikun.html
 ; Thank you to the people involved in making this page. :)
 
-可愛い|かわいい|0-1:かわい
+可愛|かわい
 
 嗚呼|ああ
 吁嗟|ああ
